@@ -1,0 +1,162 @@
+@import url('assets/fonts/quicksand.css');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Quicksand', sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #202020;
+}
+
+h2,
+h3 {
+   color: #163611;
+}
+
+aside a,
+article a {
+   color: #163611;
+}
+
+a:hover {
+   color: green;
+}
+
+h1 {
+   font-size: 1.5em;
+}
+
+footer {
+   padding: 20px;
+   color: rgb(210, 210, 210);
+   background-color: #163611;
+   text-align: center;
+   font-weight: bold;
+}
+
+.profile header {
+   text-align: center;
+}
+
+.featured-image {
+   display: block;
+   width: 100%;
+   max-height: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   object-fit: cover;
+   object-position: center;
+}
+
+.profile img {
+   width: 200px;
+   object-fit: scale-down;
+   object-position: center;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   background-color: rgb(110, 110, 110);
+}
+
+.jumbotron {
+   font-size: 20px;
+   padding: 60px;
+   background-color: #163611;
+   text-align: center;
+   color: rgb(210, 210, 210);
+}
+
+header {
+   display: inline;
+}
+
+/* Navigasi */
+
+nav {
+   background-color: #081c05;
+   position: sticky;
+   top: 0;
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: rgb(210, 210, 210);
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+nav ul {
+   font-size: 0;
+   margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+   display: inline-block;
+   position: relative;
+}
+
+nav ul li a {
+   color: #fff;
+   display: block;
+   font-size: 18px;
+   padding: 15px 14px;
+   transition: 0.3s linear;
+}
+
+nav ul li ul {
+   border-bottom: 10px solid darkgreen;
+   display: none;
+   position: absolute;
+   width: 250px;
+}
+
+nav ul li ul li {
+   display: block;
+}
+
+nav ul li ul li a {
+   background: #081c05;
+   display: block;
+   padding: 10px 14px;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+}
+
+#content {
+   float: left;
+   width: 70%;
+}
+
+aside {
+   float: right;
+   width: 30%;
+   padding-left: 20px;
+}
+
+.active {
+   color: green;
+}
+
+@media screen and (max-width: 1160px) {
+
+   #content,
+   aside {
+      width: 100%;
+      padding: 0;
+   }
+}
